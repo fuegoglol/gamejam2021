@@ -112,11 +112,16 @@ class Tower:
                         distance = math.sqrt((pos1[0] - pos2[0])**2 + (pos1[1] - pos2[1])**2)
 
                         if distance < self.towerRange:
-                            if (self.path_border or self.path_mine) and not enemy.fly:
+                            if self.path_mine and not enemy.fly:
                                 enemy.blocked = True
                                 enemy.hp -= self.damage
                                 self.energy -= self.energy_consumption
 
+                            elif self.path_border:
+                                enemy.blocked = True
+                                enemy.hp -= self.damage
+                                self.energy -= self.energy_consumption
+                                
                             elif not self.path_border and not self.path_mine:
                                 pips.append(Pip(self.coordinates, enemy, self.damage, self.ricochet, self.poison, self.confusing))
                                 self.energy -= self.energy_consumption

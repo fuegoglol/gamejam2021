@@ -21,7 +21,7 @@ class Utils:
             'range': 85,
             'max_attack': 1,
             'energy_consumption': 10,
-            'sleeping_time': 5,
+            'sleeping_time': 2,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -39,7 +39,7 @@ class Utils:
             'range': 16,
             'max_attack': 1,
             'energy_consumption': 100,
-            'sleeping_time': 10,
+            'sleeping_time': 8,
             'ricochet': False,
             'path_border': False,
             'path_mine': True,
@@ -58,7 +58,7 @@ class Utils:
             'range': 90,
             'max_attack': 1,
             'energy_consumption': 9,
-            'sleeping_time': 4,
+            'sleeping_time': 2,
             'ricochet': True,
             'path_border': False,
             'path_mine': False,
@@ -76,7 +76,7 @@ class Utils:
             'range': 100,
             'max_attack': 1,
             'energy_consumption': 50,
-            'sleeping_time': 10,
+            'sleeping_time': 5,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -95,7 +95,7 @@ class Utils:
             'range': 85,
             'max_attack': 3,
             'energy_consumption': 8,
-            'sleeping_time': 4,
+            'sleeping_time': 3,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -129,10 +129,10 @@ class Utils:
             'description': 'blablabla',
             'fire_rate': 1,
             'damage': 5,
-            'range': 0,
+            'range': 1,
             'max_attack': 1,
             'energy_consumption': 2,
-            'sleeping_time': 10,
+            'sleeping_time': 1,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -145,12 +145,12 @@ class Utils:
             'name': 'Carrot',
             'price': 500,
             'description': 'blablabla',
-            'fire_rate': 1,
+            'fire_rate': 2.5,
             'damage': 50,
             'range': 300,
             'max_attack': 1,
             'energy_consumption': 25,
-            'sleeping_time': 5,
+            'sleeping_time': 4,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -202,7 +202,7 @@ class Utils:
             'price': 2000,
             'description': 'blablabla',
             'fire_rate': 30,
-            'damage': 3,
+            'damage': 10,
             'range': 130,
             'max_attack': 1,
             'energy_consumption': 0.1,
@@ -220,11 +220,11 @@ class Utils:
             'price': 5000,
             'description': 'blablabla',
             'fire_rate': 0.25,
-            'damage': 50,
+            'damage': 1000,
             'range': 500,
             'max_attack': 1000,
             'energy_consumption': 100,
-            'sleeping_time': 60,
+            'sleeping_time': 8,
             'ricochet': False,
             'path_border': False,
             'path_mine': False,
@@ -260,8 +260,8 @@ class Utils:
             'damage': 100,
             'range': 1,
             'max_attack': 20,
-            'energy_consumption': 0,
-            'sleeping_time': 0,
+            'energy_consumption': 1,
+            'sleeping_time': 10,
             'ricochet': True,
             'path_border': False,
             'path_mine': True,
@@ -345,7 +345,7 @@ class Utils:
         'eagle': {
             'path': 'assets/sprites/eagle.png',
             'hp': 500,
-            'speed': 2.5,
+            'speed': 1.5,
             'water': 2000,
             'fly': True
         },
@@ -426,14 +426,110 @@ class Utils:
          70 * ('cow', 30) +
          60 * ('bat', 30) +
          50 * ('monkey', 30) +
+         20 * ('frog', 30) +
+         10 * ('fox', 30) +
+         5 * ('dog', 30) +
+         5 * ('eagle', 240)),
+
+         (200 * ('rat', 30) +#24
+         150 * ('chicken', 30) +
+         80 * ('rabbit', 30) +
+         100 * ('cow', 30) +
+         60 * ('bat', 30) +
+         50 * ('monkey', 30) +
+         20 * ('frog', 30) +
+         11 * ('fox', 30) +
+         6 * ('dog', 30) +
+         8 * ('eagle', 240)),
+
+         (300 * ('rat', 30) +#25
+         200 * ('chicken', 30) +
+         120 * ('rabbit', 30) +
+         150 * ('cow', 30) +
+         200 * ('bat', 30) +
+         50 * ('monkey', 30) +
+         20 * ('frog', 30) +
+         11 * ('fox', 30) +
+         6 * ('dog', 30) +
+         8 * ('eagle', 240)),
+
+         (600 * ('rat', 30) +#26
+         250 * ('chicken', 30) +
+         120 * ('rabbit', 30) +
+         150 * ('cow', 30) +
+         200 * ('bat', 30) +
+         50 * ('monkey', 30) +
+         20 * ('frog', 30) +
+         20 * ('fox', 30) +
+         15 * ('dog', 30) +
+         20 * ('eagle', 240)),
+
+         (600 * ('rat', 30) +#27
+         400 * ('chicke100', 30) +
+         250 * ('rabbit', 30) +
+         300 * ('cow', 30) +
+         200 * ('bat', 30) +
+         100 * ('monkey', 30) +
+         30 * ('frog', 30) +
+         20 * ('fox', 30) +
+         15 * ('dog', 30) +
+         20 * ('eagle', 240)),
+
+         800 * ('chicken', 30) +
+         500 * ('rabbit', 30) +
+         400 * ('cow', 30) +
+         300 * ('bat', 30) +
+         100 * ('monkey', 30) +
          40 * ('frog', 30) +
-         30 * ('fox', 30) +
-         20 * ('dog', 30) +
-         10 * ('eagle', 240)),
+         20 * ('fox', 30) +
+         15 * ('dog', 30) +
+         20 * ('eagle', 240)),
 
-        (1 * ('hyena', 60)),#24
+         (1000 * ('rat', 30) +#29
+         800 * ('chicken', 30) +
+         500 * ('rabbit', 30) +
+         400 * ('cow', 30) +
+         300 * ('bat', 30) +
+         100 * ('monkey', 30) +
+         60 * ('frog', 30) +
+         20 * ('fox', 30) +
+         15 * ('dog', 30) +
+         20 * ('eagle', 240)),
 
-        (1 * ('rat', 300) +#25
+         (1000 * ('rat', 30) +#30
+         1000 * ('chicken', 30) +
+         800 * ('rabbit', 30) +
+         600 * ('cow', 30) +
+         500 * ('bat', 30) +
+         150 * ('monkey', 30) +
+         60 * ('frog', 30) +
+         20 * ('fox', 30) +
+         30 * ('dog', 30) +
+         20 * ('eagle', 240)),
+
+        (1000 * ('rat', 30) +#31
+         1000 * ('chicken', 30) +
+         1000 * ('rabbit', 30) +
+         800 * ('cow', 30) +
+         500 * ('bat', 30) +
+         300 * ('monkey', 30) +
+         100 * ('frog', 30) +
+         20 * ('fox', 30) +
+         30 * ('dog', 30) +
+         20 * ('eagle', 240)),
+
+        (1000 * ('rat', 30) +#32
+         1000 * ('chicken', 30) +
+         1000 * ('rabbit', 30) +
+         800 * ('cow', 30) +
+         500 * ('bat', 30) +
+         300 * ('monkey', 30) +
+         50 * ('frog', 30) +
+         50 * ('fox', 30) +
+         60 * ('dog', 30) +
+         100 * ('eagle', 240)),
+
+        (1 * ('rat', 300) +#33
          1 * ('chicken', 300) +
          1 * ('rabbit', 300) +
          1 * ('cow', 300) +

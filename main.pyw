@@ -73,7 +73,7 @@ def eventListener(event, elements):
                 if mx >= 295 and mx <= 728 and my >= 350 and my <= 472:
                     #Start game
                     garden = Garden()
-                    hud = HUD(garden, 10, 10)#10000)
+                    hud = HUD(garden, 10, 10)#10000) pour test des trucs
                     garden.HUD = hud
 
                     elements = [garden, hud]
